@@ -1,14 +1,14 @@
 # Team Relay: HemoGrid emergency blood dispatch
 
-**🏆 Overall First Place, Terumo BCT Africa Hackathon 2026** · **[Unified HemoGrid project showcase](https://github.com/Grolds-Code/hemo-grid-frontend/blob/main/HEMOGRID.md)** · **[Personal frontend fork](https://github.com/Grolds-Code/hemo-grid-frontend)**
+**🏆 Overall First Place, Terumo BCT Africa Hackathon 2026** · **[Unified HemoGrid repository](https://github.com/Grolds-Code/HemoGrid)** · **[Frontend code](../frontend/)**
 
 > **The closest blood bank is not always the right one.**
 
 **Terumo BCT Africa Hackathon 2026 · Emergency request and dispatch**
 
-**[Launch the live app](https://hemogrid-eight.vercel.app/login)** · **[Demo video](https://www.tella.tv/video/hemogrid-emergency-blood-dispatch-dt1odmiq)** · **[Pitch slides](https://docs.google.com/presentation/d/1E3NaYlyrvygwXysVymFKq4qBNCi22wb428WnZNdBTfE/edit?slide=id.p1#slide=id.p1)** · **[Judges' two-minute project guide](https://github.com/Team-Relay/hemo-grid-frontend/blob/main/docs/JUDGE_START_HERE.md)** · [Frontend source and primary README](https://github.com/Grolds-Code/hemo-grid-frontend) · [Hosted transaction proof](https://github.com/Team-Relay/hemo-grid-frontend/actions/runs/42952475072)
+**[Launch the live app](https://hemogrid-eight.vercel.app/login)** · **[Demo video](https://www.tella.tv/video/hemogrid-emergency-blood-dispatch-dt1odmiq)** · **[Pitch slides](https://docs.google.com/presentation/d/1E3NaYlyrvygwXysVymFKq4qBNCi22wb428WnZNdBTfE/edit?slide=id.p1#slide=id.p1)** · **[Judges' two-minute project guide](https://github.com/Team-Relay/hemo-grid-frontend/blob/main/docs/JUDGE_START_HERE.md)** · [Frontend application](../frontend/) · [Hosted transaction proof](https://github.com/Team-Relay/hemo-grid-frontend/actions/runs/42952475072)
 
-**This is the backend and evaluation repository**, not a second product. The frontend handles staff workflows; this service owns matching, quarantine checks, shared-stock planning, authorization, reservations and transactional state. Together they form **one HemoGrid submission**.
+**This directory contains the backend and evaluation code**, not a second product. The frontend handles staff workflows; this service owns matching, quarantine checks, shared-stock planning, authorization, reservations and transactional state. Together they form **one HemoGrid submission**.
 
 HemoGrid helps a hospital blood-bank officer turn an urgent request into a supplier proposal, a staff decision and a reserved order. It brings recorded stock, quarantine status, configured blood-group rules and corridor travel estimates into one workflow. The supplying bank confirms the request before stock is reserved. A coordinator can also preview a complete supplier plan for two to five staff-approved critical red-cell requests competing for the same inventory.
 
@@ -277,9 +277,9 @@ All third-party libraries used by the backend service are declared in [`pom.xml`
 
 | Name | Role | Country | Presenting Friday (in person / online) | Email |
 | --- | --- | --- | --- | --- |
-| Grold Otieno | ML and AI research; Epidemiology and Biostatistics | Kenya | In person in Nairobi, as recorded by the team | [groldotieno97@gmail.com](mailto:groldotieno97@gmail.com) |
-| Dennis Ikechukwu Okwuchukwu | Team lead, full-stack and systems engineering | Nigeria | Online | [okwuchukwudennis001@gmail.com](mailto:okwuchukwudennis001@gmail.com) |
-| Mubarak Zubair | Product management and clinical data analysis | Nigeria | Online | [mubarak@aluvity.com](mailto:mubarak@aluvity.com) |
+| Grold Otieno | Technical lead; architecture, implementation, dispatch planning, testing and evaluation; Epidemiology and Biostatistics | Kenya | Online | [groldotieno97@gmail.com](mailto:groldotieno97@gmail.com) |
+| Dennis Ikechukwu Okwuchukwu | Original project idea and concept | Nigeria | Online | [okwuchukwudennis001@gmail.com](mailto:okwuchukwudennis001@gmail.com) |
+| Mubarak Zubair | Product input and clinical-data analysis | Nigeria | Online | [mubarak@aluvity.com](mailto:mubarak@aluvity.com) |
 
 ## Known limits and next steps
 
