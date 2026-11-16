@@ -1,0 +1,38 @@
+# Local PostgreSQL and pgAdmin services; production uses Render and Neon instead.
+
+services:
+  postgres:
+    image: postgres:17
+    container_name: hemogrid-postgres
+    environment:
+      POSTGRES_DB: hemogrid
+      POSTGRES_USER: hemogrid
+      POSTGRES_PASSWORD: hemogrid
+    ports:
+      - "5432:5432"
+    volumes:
+      - hemogrid_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hemogrid -d hemogrid"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: hemogrid-pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: dennis@hemogrid.com
+      PGADMIN_DEFAULT_PASSWORD: dennis
+    ports:
+      - "5050:80"
+    volumes:
+      - hemogrid_pgadmin_data:/var/lib/pgadmin
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+
+volumes:
+  hemogrid_postgres_data:
+  hemogrid_pgadmin_data:

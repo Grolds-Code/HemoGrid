@@ -1,0 +1,72 @@
+/* InventoryResponse is a safe outbound API projection for the inventory module. */
+
+package com.sentinel.hemo_grid.inventory.api;
+
+import java.time.Instant;
+import java.util.UUID;
+
+import com.sentinel.hemo_grid.inventory.domain.BloodComponent;
+import com.sentinel.hemo_grid.inventory.domain.BloodGroup;
+import com.sentinel.hemo_grid.inventory.domain.BloodInventory;
+import com.sentinel.hemo_grid.inventory.domain.ColdChainStatus;
+import io.swagger.v3.oas.annotations.media.Schema;
+
+public record InventoryResponse(
+		@Schema(example = "30000000-0000-0000-0000-000000000008")
+		UUID id,
+
+		@Schema(example = "O_NEGATIVE")
+		BloodGroup bloodGroup,
+
+		@Schema(example = "RED_CELLS")
+		BloodComponent component,
+
+		@Schema(example = "5")
+		int unitsAvailable,
+
+		@Schema(example = "0")
+		int unitsReserved,
+
+		@Schema(example = "5")
+		int unitsFree,
+
+		@Schema(example = "0")
+		int quarantinedTempExcursionUnits,
+
+		@Schema(example = "3.8")
+		double fridgeTempCelsius,
+
+		@Schema(example = "VERIFIED_2_6C")
+		ColdChainStatus coldChainStatus,
+
+		@Schema(example = "0")
+		int expiringWithin7DaysUnits,
+
+		@Schema(example = "5")
+		int dispatchableUnitsFree,
+
+		@Schema(example = "true")
+		boolean coldChainVerified,
+
+		@Schema(description = "Last persisted inventory change in UTC")
+		Instant updatedAt
+) {
+
+	public static InventoryResponse from(BloodInventory inventory) {
+		return new InventoryResponse(
+				inventory.getId(),
+				inventory.getBloodGroup(),
+				inventory.getComponent(),
+				inventory.getUnitsAvailable(),
+				inventory.getUnitsReserved(),
+				inventory.unitsFree(),
+				inventory.getQuarantinedTempExcursionUnits(),
+				inventory.getFridgeTempCelsius(),
+				inventory.getColdChainStatus(),
+				inventory.getExpiringWithin7DaysUnits(),
+				inventory.dispatchableUnitsFree(),
+				inventory.isColdChainVerified(),
+				inventory.getUpdatedAt()
+		);
+	}
+}
