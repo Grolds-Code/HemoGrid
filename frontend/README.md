@@ -1,12 +1,12 @@
 # Team Relay: HemoGrid emergency blood dispatch
 
-**🏆 Overall First Place, Terumo BCT Africa Hackathon 2026** · **[Unified HemoGrid project showcase](HEMOGRID.md)** · **[Personal backend fork](https://github.com/Grolds-Code/hemo-grid-backend)**
+**🏆 Overall First Place, Terumo BCT Africa Hackathon 2026** · **[Unified HemoGrid repository](https://github.com/Grolds-Code/HemoGrid)** · **[Backend code](../backend/)**
 
 > ### The closest blood bank is not always the right one.
 
 **Terumo BCT Africa Hackathon 2026 · Emergency request and dispatch**
 
-**[Launch the live prototype](https://hemogrid-eight.vercel.app/login)** · **[Demo video](https://www.tella.tv/video/hemogrid-emergency-blood-dispatch-dt1odmiq)** · **[Pitch slides](https://docs.google.com/presentation/d/1E3NaYlyrvygwXysVymFKq4qBNCi22wb428WnZNdBTfE/edit?slide=id.p1#slide=id.p1)** · **[Judges: start here (2 minutes)](docs/JUDGE_START_HERE.md)** · [Backend and evaluation](https://github.com/Grolds-Code/hemo-grid-backend) · [Verified hosted transaction](https://github.com/Team-Relay/hemo-grid-frontend/actions/runs/42952475072)
+**[Launch the live prototype](https://hemogrid-eight.vercel.app/login)** · **[Demo video](https://www.tella.tv/video/hemogrid-emergency-blood-dispatch-dt1odmiq)** · **[Pitch slides](https://docs.google.com/presentation/d/1E3NaYlyrvygwXysVymFKq4qBNCi22wb428WnZNdBTfE/edit?slide=id.p1#slide=id.p1)** · **[Judges: start here (2 minutes)](docs/JUDGE_START_HERE.md)** · [Backend and evaluation](../backend/) · [Verified hosted transaction](https://github.com/Team-Relay/hemo-grid-frontend/actions/runs/42952475072)
 
 **Judge access:** [Open the demo](https://hemogrid-eight.vercel.app/login), select **Hospital**, **Blood bank** or **Platform admin**, and click **Continue to workspace**. The role's synthetic email and password are **already filled in**. **Do not enter personal credentials.** [See the 90-second guide](docs/JUDGE_START_HERE.md).
 
@@ -18,9 +18,9 @@
 
 **One working system. Three accountable roles.** A hospital requests blood, a network coordinator can preview supplier allocations across competing emergencies, and a blood bank verifies and reserves the stock before fulfilment. HemoGrid evaluates recorded inventory, configured group rules, quarantine evidence and estimated routes rather than distance alone.
 
-**Why it matters:** In a controlled synthetic benchmark of 1,072 red-cell requests, a nearest-site choice failed at least one configured eligibility check for **749 requests**. [See the method, baselines and tradeoffs](https://github.com/Grolds-Code/hemo-grid-backend#ai-and-data). This is **not** a clinical outcome or a measured delivery-time improvement.
+**Why it matters:** In a controlled synthetic benchmark of 1,072 red-cell requests, a nearest-site choice failed at least one configured eligibility check for **749 requests**. [See the method, baselines and tradeoffs](../backend/README.md#ai-and-data). This is **not** a clinical outcome or a measured delivery-time improvement.
 
-**Repository guide:** This is the **project's main overview and frontend**. The [backend repository](https://github.com/Grolds-Code/hemo-grid-backend) contains the API, inventory transactions, planner and reproducible evaluation. Both repositories form **one submission**. For the fastest review, open the [judges' guide](docs/JUDGE_START_HERE.md).
+**Repository guide:** This directory contains the **frontend application and technical guide**. The [backend directory](../backend/) contains the API, inventory transactions, planner and reproducible evaluation. Both applications now appear in **one unified repository**. For the fastest review, open the [judges' guide](docs/JUDGE_START_HERE.md).
 
 *All scenarios are synthetic. The prototype does not replace clinical crossmatching, staff authorization or physical dispatch.*
 
@@ -78,7 +78,7 @@ This was **a synthetic software lifecycle test**, not an actual shipment, clinic
 | Frontend | [HemoGrid web app](https://hemogrid-eight.vercel.app) |
 | Backend | [API health](https://hemo-grid-backend.onrender.com/actuator/health) |
 | API reference | [Swagger UI](https://hemo-grid-backend.onrender.com/swagger-ui.html) |
-| Backend source and evidence | [Team-Relay/hemo-grid-backend](https://github.com/Grolds-Code/hemo-grid-backend) |
+| Backend source and evidence | [Backend source and evidence](../backend/) |
 | Video (3 minutes maximum) | [Watch demo video (Tella)](https://www.tella.tv/video/hemogrid-emergency-blood-dispatch-dt1odmiq) |
 | Pitch slides (8 maximum) | [View pitch slides (Google Slides)](https://docs.google.com/presentation/d/1E3NaYlyrvygwXysVymFKq4qBNCi22wb428WnZNdBTfE/edit?slide=id.p1#slide=id.p1) |
 
@@ -155,7 +155,7 @@ Two baselines are evaluated in the backend: nearest active site without inventor
 
 On the unchanged seeded stock snapshot, both batch methods complete 187/214 five-request groups and the paired transport difference is only 0.20%. The independent-request comparison also shows a tradeoff: on the same 1,044 eligible requests, HemoGrid's exact-group preference has a **longer** mean estimated transit (4.589 hours) than nearest eligible (4.359 hours). That result should not be presented as a demonstrated reduction in emergency delivery time.
 
-The figures measure configured checks and synthetic route estimates. They do not establish patient outcomes, clinical suitability, actual arrival times, or generalization beyond the supplied scenarios. See the [reproducible backend results](https://github.com/Grolds-Code/hemo-grid-backend#ai-and-data).
+The figures measure configured checks and synthetic route estimates. They do not establish patient outcomes, clinical suitability, actual arrival times, or generalization beyond the supplied scenarios. See the [reproducible backend results](../backend/README.md#ai-and-data).
 
 ### How recommendations are explained and approved
 
@@ -195,9 +195,9 @@ All third-party npm packages used by the frontend web application are declared i
 
 | Member | Role | Country | Presentation |
 | --- | --- | --- | --- |
-| **Grold Otieno** | ML and AI research; Epidemiology and Biostatistics | Kenya | Online |
-| Dennis Ikechukwu Okwuchukwu | Team lead; full-stack and systems engineering | Nigeria | Online |
-| Mubarak Zubair | Product management and clinical data analysis | Nigeria | Online |
+| **Grold Otieno** | Technical lead; frontend and backend engineering, dispatch planning, testing and evaluation; Epidemiology and Biostatistics | Kenya | Online |
+| Dennis Ikechukwu Okwuchukwu | Original project idea and concept | Nigeria | Online |
+| Mubarak Zubair | Product input and clinical-data analysis | Nigeria | Online |
 
 ## Known limits and next steps
 
