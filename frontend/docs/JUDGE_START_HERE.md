@@ -103,8 +103,8 @@ Real facility authorization, local transfusion-service protocol validation, unit
 
 | Member | Focus |
 | --- | --- |
-| **Grold Otieno** | ML and AI research; Epidemiology and Biostatistics · Kenya |
-| Dennis Ikechukwu Okwuchukwu | Team lead; full-stack and systems engineering · Nigeria |
-| Mubarak Zubair | Product management and clinical data analysis · Nigeria |
+| **Grold Otieno** | Technical lead; engineering, dispatch planning, testing and evaluation; Epidemiology and Biostatistics · Kenya |
+| Dennis Ikechukwu Okwuchukwu | Original project idea and concept · Nigeria |
+| Mubarak Zubair | Product input and clinical-data analysis · Nigeria |
 
 **The code is public for evaluation.** The projects currently have no root LICENSE file; public availability is not a grant of unrestricted reuse. AI-assisted development was used for implementation support, review and documentation, with team accountability and reproducible tests described in the repository READMEs.
