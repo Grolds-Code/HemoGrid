@@ -31,7 +31,7 @@ HemoGrid is a collaborative **Team Relay** emergency blood-dispatch prototype. T
 | **[frontend/](frontend/)** | Next.js, React and TypeScript application, staff-facing workflows, demonstration guide, browser checks |
 | **[backend/](backend/)** | Spring Boot and PostgreSQL API, inventory reservations, quarantine checks, advisory joint planning, automated tests and reproducible evaluations |
 
-**Original Team Relay sources:** [frontend](https://github.com/Team-Relay/hemo-grid-frontend) · [backend](https://github.com/Team-Relay/hemo-grid-backend). **Preserved personal forks:** [frontend](https://github.com/Grolds-Code/hemo-grid-frontend) · [backend](https://github.com/Grolds-Code/hemo-grid-backend).
+**Original Team Relay sources:** [frontend](https://github.com/Team-Relay/hemo-grid-frontend) · [backend](https://github.com/Team-Relay/hemo-grid-backend).
 
 ## How HemoGrid works
 
@@ -47,15 +47,15 @@ These are software tests on synthetic data, **not** clinical accuracy measuremen
 
 [Evaluation methods, datasets, baselines and limitations](backend/README.md#ai-and-data) · [Original hosted synthetic transaction test](https://github.com/Team-Relay/hemo-grid-frontend/actions/runs/42952475072)
 
-## Team and contributions
+## Contributors and responsibilities
 
-| Team member | Contributions |
+| Contributor | Contribution |
 | --- | --- |
-| **Grold Otieno** | Dispatch planning and integration, inventory and concurrency safeguards, reproducible evaluation, automated testing and frontend workflows |
-| **Dennis Ikechukwu Okwuchukwu** | Original concept and team leadership, full-stack and systems engineering, product implementation and final presentation |
-| **Mubarak Zubair** | Product management and clinical-data analysis |
+| **Grold Otieno** | **Technical lead**: system architecture, frontend and backend engineering, dispatch planning, inventory and concurrency safeguards, integration, automated testing and reproducible evaluation |
+| **Dennis Ikechukwu Okwuchukwu** | Original HemoGrid idea and concept |
+| **Mubarak Zubair** | Product input and clinical-data analysis |
 
-**This repository is a personal presentation of a collaboratively built project, not a claim of sole authorship or exclusive intellectual-property ownership.** Git history is retained through `git subtree add` without squashing the imported histories. The original repositories are unchanged.
+The hackathon team did not designate an overall team lead. This unified repository preserves the collaborators' attribution and original Git commit histories without claiming exclusive ownership.
 
 ## Running the prototype
 
