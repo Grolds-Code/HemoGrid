@@ -55,7 +55,7 @@ These are software tests on synthetic data, **not** clinical accuracy measuremen
 | **Dennis Ikechukwu Okwuchukwu** | Original HemoGrid idea and concept |
 | **Mubarak Zubair** | Product input and clinical-data analysis |
 
-The hackathon team did not designate an overall team lead. This unified repository preserves the collaborators' attribution and original Git commit histories without claiming exclusive ownership.
+This unified repository preserves the contributors' roles and original Git commit histories while recognizing HemoGrid as a Team Relay collaboration.
 
 ## Running the prototype
 
